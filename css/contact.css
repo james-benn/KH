@@ -1,0 +1,50 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+
+
+body {
+    background: rgba(33, 37, 41, 0.02) !important;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.nav-link:focus-within {
+    color: #0D6EFD !important;
+}
+
+.login-1 {
+    color: #669E00 !important;
+    border: 1px solid #669E00 !important;
+}
+
+.login-2,
+.login-3 {
+    background-color: #669E00 !important;
+    color: #ffffff !important;
+    border: 1px solid #669E00 !important;
+}
+
+.contact-section {
+    margin-bottom: 80px !important;
+}
+
+#contact{
+    margin-top: 100px !important;
+}
+
+.photo-sect img{
+    width: 440px !important;
+}
+
+@media screen and (max-width: 426px) {
+    .photo-sect img{
+        width: 350px !important;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .contact-words{
+        font-size: 20px;
+    }
+}

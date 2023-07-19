@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KodeCamp-landing-page</title>
+
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/landingpage.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/howitworks.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="images/Rectangle 1528.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600&family=DM+Sans:wght@400;500&family=Lato:wght@300;400;700;900&family=Montserrat:ital,wght@0,100;0,500;0,600;0,700;0,800;1,500;1,600;1,700;1,800&family=Mulish:wght@400;600&family=Nunito+Sans:wght@300;400;600&family=Raleway:wght@100;500;600;700&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600&family=DM+Sans:wght@400;500&family=Inter:wght@100;200;300;400;500&family=Lato:wght@300;400;700;900&family=Montserrat:ital,wght@0,100;0,500;0,600;0,700;0,800;1,500;1,600;1,700;1,800&family=Mulish:wght@400;600&family=Nunito+Sans:wght@300;400;600&family=Raleway:wght@100;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg shadow">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="images/Rectangle 1528.png" alt="" class="nav-logo"
+                    width="100px"></a>
+            <button class="login-3 px-1 pt-2 pb-2" type="submit">Enrol now</button>
+            <button class="navbar-toggler p-1" type="menu" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" onclick='myFunction()'></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent myDiv">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold px-4" href="#home">Home</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link fw-bold px-4" href="#">About Us</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold px-4" href="#contact">Contact Us</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link fw-bold px-4" href="#">Explore</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold px-4" href="#how-it-works">How it works</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <button class="login-1 btn mx-2 px-4 py-2" type="submit">Login</button>
+                    <button class="login-2 px-5" type="submit">Enrol now</button>
+                </form>
+            </div>
+        </div>
+        <div id="myDiv" class="">
+            <ul class="navbar-nav mx-auto mb-2 mt-4 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link fw-bold px-4" href="#home"><span><img src="images/home-svg.svg" class="pe-3"
+                                alt="home icon">Home</span></a>
+                </li>
+                <hr class="mt-1 mb-1">
+                <!-- <li class="nav-item">
+                    <a class="nav-link fw-bold px-4" href="#"><span><img src="images/about-svg.svg" class="pe-3"
+                                alt="About icon"></span>About Us</a>
+                </li> -->
+                <hr class="mt-1 mb-1">
+                <li class="nav-item">
+                    <a class="nav-link fw-bold px-4" href="#contact"><span><img src="images/contact-svg.svg" class="pe-3"
+                                alt="Contacticon"></span>Contact Us</a>
+                </li>
+                <hr class="mt-1 mb-1">
+                <!-- <li class="nav-item">
+                    <a class="nav-link fw-bold px-4" href="#"><span><img src="images/explore-svg.svg" class="pe-3"
+                                alt="home icon"></span>Explore</a>
+                </li> -->
+                <hr class="mt-1 mb-1">
+                <li class="nav-item">
+                    <a class="nav-link fw-bold px-4" href="#how-it-works"><span><img src="images/howitworks-svg.svg" class="pe-3"
+                                alt="home icon"></span>How it works</a>
+                </li>
+                <hr class="mt-1 mb-1">
+                <li class="nav-item">
+                    <a class="nav-link login-link fw-bold px-4" href="#"><span><img src="images/login-svg.png"
+                                class="pe-3" alt="login icon"></span>Login</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    </div>
+    <!-- end of navigation bar -->
+
+    <section id="home">
+        <div class="container section-1">
+            <div class="row">
+                <div class="col-lg-5 col-md-8 col-sm-12 gx-5 container">
+                    <div>
+                        <h3 class="paragraph-1">Kickstart and Develop your career in <span class="tech">Tech</span>.
+                        </h3>
+                        <p class="paragraph-2 mt-4">Join the KodeCamp internship and gain relevant skills to kickstart
+                            and
+                            develop your career in the ever growing tech space.</p>
+                    </div>
+                    <div>
+                        <button class="btn-1 mt-4">Get Started</button>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-8 col-sm-12 container">
+                    <div class="Check shadow-sm">
+                        <div class="d-flex justify-content-center">
+                            <div class="tick"></div>
+                            <div>
+                                <p class="mentor">Mentorship opportunity</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Check-2 shadow-sm">
+                        <div class="d-flex justify-content-center">
+                            <!-- <div class="tick"></div> -->
+                            <div>
+                                <p class="mentor ps-5">Fully remote</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Check-3 shadow-sm">
+                        <div class="d-flex justify-content-center">
+                            <div class="tick"></div>
+                            <div>
+                                <p class="mentor">Internship placement</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shape-1">
+
+                    </div>
+                    <div class="shape-2">
+
+                    </div>
+                    <div class="shape-3">
+
+                    </div>
+                    <div class="grouped-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    </section>
+    <hr class="line-1">
+    <!-- end of section 1 -->
+
+    <section id="sponsor">
+        <div class="container sponsor">
+            <h4 class="paragraph-3 text-center text-uppercase">Our Sponsors</h4>
+            <p class="paragraph-4 text-center mt-4 mb-5">We are a trusted tech stop for talents globally, aiming to
+                increase the percentage deployed into the workforce. As a sponsor, you stand to gain the audience that
+                comes with the brand and also be affiliated with us.
+                Check out our existing sponsors today!</p>
+        </div>
+        <div class="container d-flex justify-content-center">
+            <div class="bonitas sponsor">
+
+            </div>
+            <div class="kodehauz sponsor">
+
+            </div>
+            <div class="hng sponsor">
+
+            </div>
+        </div>
+        <div class="container text-center sponsor">
+            <button class="btn-2 mt-5">Become a sponsor</button>
+            <hr class="line-2">
+        </div>
+    </section>
+    <!-- end of section 2 -->
+
+    <section class="session-1">
+        <div class="container">
+            <h3 class="paragraph-5 text-uppercase text-center order-md-4">Benefits of joining Kodecamp internship </h3>
+        </div>
+
+        <div class="text-center card-details">
+            <div class="container row d-flex justify-content-center align-item-center">
+                <div class="col-lg-4 col-md-6 col-sm-12 gy-5">
+                    <div class="box-1">
+                        <div class="d-flex justify-content-center">
+                            <div class="box-image">
+                            </div>
+                        </div>
+                        <p class="text-uppercase heading-1-sec">learn from experts</p>
+                        <p class="wording-sec">At KodeCamp, you gain access
+                            relevant and valuable training
+                            and mentorship that will propel
+                            your tech journey</p>
+                    </div>
+                    <!-- <div class="info">
+                        <p class="number">10,000</p>
+                        <p class="intern">Interns per <br> cohort</p>
+                    </div> -->
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 gy-5">
+                    <div class="box-1">
+                        <div class="d-flex justify-content-center">
+                            <div class="box-image-1">
+                            </div>
+                        </div>
+                        <p class="text-uppercase heading-1-sec">what we offer</p>
+                        <p class="wording-sec">Partnering with various tech
+                            industries,we offer our interns
+                            spots to work with the skills
+                            gotten in a corporate setting.</p>
+                    </div>
+                    <!-- <div class="info">
+                        <p class="number">38+</p>
+                        <p class="intern">Expert mentors <br> to guide you</p>
+                    </div> -->
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 gy-5">
+                    <div class="box-1">
+                        <div class="d-flex justify-content-center">
+                            <div class="box-image-2">
+                            </div>
+                        </div>
+                        <p class="text-uppercase heading-1-sec">get a certificate</p>
+                        <p class="wording-2-sec">As much as we believe in knowledge
+                            acquisition, we also award
+                            certifications that are globally
+                            recognized and accepted</p>
+                    </div>
+                    <!-- <div class="info">
+                        <p class="number">78%</p>
+                        <p class="intern">Employment/placement <br> rate after completion </p>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="container d-flex justify-content-around percent gy-5">
+            <div class="info text-center pe-4">
+                <p class="number">10,000</p>
+                <p class="intern">Interns per <br> cohort</p>
+            </div>
+            <div class="info text-center pe-2">
+                <p class="number">38+</p>
+                <p class="intern">Expert mentors <br> to guide you</p>
+            </div>
+            <div class="info text-center">
+                <p class="number">78%</p>
+                <p class="intern">Employment <span class="place">/placement</span><br> rate after completion </p>
+            </div>
+        </div>
+        <hr class="line-3">
+    </section>
+    <!-- end of section 2 -->
+
+    <section class="session-2">
+        <div class="container">
+            <h3 class="paragraph-5 text-uppercase text-center order-md-4">Benefits of joining Kodecamp internship </h3>
+        </div>
+        <div class="slide-container d-flex justify-content-center swiper">
+            <div class="slide-contentt">
+                <div class="card-wrapper swiper-wrapper gy-5 gx-5">
+                    <div class="swiper-slide">
+                        <div class="container text-center">
+                            <div class="box-1 pe-4">
+                                <div class="d-flex justify-content-center">
+                                    <div class="box-image">
+                                    </div>
+                                </div>
+                                <p class="text-uppercase heading-1-sec">learn from experts</p>
+                                <p class="wording-sec">At KodeCamp, you gain access
+                                    relevant and valuable training
+                                    and mentorship that will propel
+                                    your tech journey</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="container text-center">
+                            <div class="box-1 pe-4">
+                                <div class="d-flex justify-content-center">
+                                    <div class="box-image-1">
+                                    </div>
+                                </div>
+                                <p class="text-uppercase heading-1-sec">what we offer</p>
+                                <p class="wording-sec">Partnering with various tech
+                                    industries,we offer our interns
+                                    spots to work with the skills
+                                    gotten in a corporate setting.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="container text-center">
+                            <div class="box-1 pe-4">
+                                <div class="d-flex justify-content-center">
+                                    <div class="box-image-2">
+                                    </div>
+                                </div>
+                                <p class="text-uppercase heading-1-sec">get a certificate</p>
+                                <p class="wording-2-sec">As much as we believe in knowledge
+                                    acquisition, we also award
+                                    certifications that are globally
+                                    recognized and accepted</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="container text-center">
+                            <div class="box-1 pe-4">
+                                <div class="d-flex justify-content-center">
+                                    <div class="box-image-2">
+                                    </div>
+                                </div>
+                                <p class="text-uppercase heading-1-sec">get a certificate</p>
+                                <p class="wording-2-sec">As much as we believe in knowledge
+                                    acquisition, we also award
+                                    certifications that are globally
+                                    recognized and accepted</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                </div>
+            </div>
+
+            <div class="swiper-button-prev swiper-navBtn"></div>
+            <div class="swiper-button-next swiper-navBtn"></div>
+            <div class="swiper-paginationn"></div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container section-3 mt-5">
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-6 col-md-8 col-sm-12">
+                    <p class="text-uppercase enrol">available tracks</p>
+                    <p class="enrol-2"><span class="enroll">Checkout</span> some of our available tracks</p>
+                    <p class="enrol-3">With so much to learn from enroling in KodeCamp, these are some of the tracks
+                        available to our interns. To browse through our list of courses, check out the <a
+                            href="#">Explore section.</a></p>
+                </div>
+                <div class="col-lg-6 col-md-8 col-sm-12">
+                    <div class="question">
+                        <div class="tracks d-flex justify-content-between">
+                            <p class="ps-5 pt-3 dev">Android Development</p>
+                            <div class="plus-sign">
+                                <!-- <i onclick="myFunctionShow()" class="bi bi-plus plus-sign me-5"></i> -->
+                                <span class="plus-icon">
+                                    <button class="buttonn buttonn-1" onclick="myDisplay()"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="35" height="35"
+                                            fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                                        </svg>
+                                </span></button>
+                            </div>
+                        </div>
+                        <div class="android shadow question-text" id="Div-display">
+                            <p> This track will teach you how to use framework to build mobile applications for Android.
+                                You will be creating amazing applications using various tools that would be enlisted on
+                                google.</p>
+                        </div>
+                    </div>
+                    <div class="question">
+                        <div class="track-1 d-flex justify-content-between">
+                            <p class="ps-5 pt-3 dev">Product Design</p>
+                            <div class="plus-sign">
+                                <!-- <i onclick="myFunctionShow()" class="bi bi-plus plus-sign me-5"></i> -->
+                                <span class="plus-icon">
+                                    <button class="buttonn buttonn-2" onclick="myFunctionShow()"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="35" height="35"
+                                            fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                                        </svg>
+                                </span></button>
+                            </div>
+                        </div>
+                        <div class="android shadow question-text" id="Div-2">
+                            <p> This track is designed to help you materialize your game-changing idea and transform it
+                                into a product using design tools.</p>
+                        </div>
+                    </div>
+                    <div class="question">
+                        <div class="track-2 d-flex justify-content-between">
+                            <p class="ps-5 pt-3 dev">Frontend/Backend Development</p>
+                            <div class="plus-sign">
+                                <!-- <i onclick="functionShow()" class="bi bi-plus plus-sign me-5"></i> -->
+                                <span class="plus-icon">
+                                    <button class="buttonn buttonn-3" onclick="functionShow()"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="35" height="35"
+                                            fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                                        </svg></button>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="android shadow question-text" id="div">
+                            <p>Enrol to learn how to create websites and applications using web languages such as PHP,
+                                Kotlin, HTML, CSS, and JavaScript </p>
+                        </div>
+                    </div>
+                    <div class="question">
+                        <div class="track-3 d-flex justify-content-between">
+                            <p class="ps-5 pt-3 dev">Product Management</p>
+                            <div class="plus-sign">
+                                <!-- <i onclick="myFunctionDisplay()" class="bi bi-plus plus-sign me-5"></i> -->
+                                <span class="plus-icon">
+                                    <button class="buttonn buttonn-4" onclick="myFunctionDisplay()"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="35" height="35"
+                                            fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                                        </svg></button>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="android shadow question-text" id="Div-4">
+                            <p>Product management is the business process of planning, developing, launching, and
+                                managing a product or service. Learn how to manage projects, time, budgets, people and
+                                get the best result. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        </div>
+        </div>
+        </div>
+    </section>
+    <hr class="line-2">
+
+    <section>
+        <div class="container text-center mt-5">
+            <p class="text-uppercase speech-heading">What our interns have to say</p>
+        </div>
+        <div class="slide-container d-flex justify-content-center swiper">
+            <div class="slide-content">
+                <div class="card-wrapper swiper-wrapper gy-5 gx-5">
+                    <div class="swiper-slide">
+                        <div class="container">
+                            <div class="square"></div>
+                            <div class="square-1 text-center">
+                                <p class="content-1">“I am now a better developer through Kodecamp training. I’m really
+                                    glad i signed up for this. Thank you Kodecamp!”</p>
+                                <div class="container d-flex justify-content-center">
+                                    <div class="swipe-image"></div>
+                                </div>
+                                <p class="text-uppercase name">Babatunde Adeniyi</p>
+                                <p class="name-1">Frontend Development Intern</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="container">
+                            <div class="square"></div>
+                            <div class="square-1 text-center">
+                                <p class="content-1">“The journey was quite intense and
+                                    interesting.. I gained so much knowledge
+                                    during the learning and internship phase,
+                                    made amazing connections. Thank you
+                                    Kodecamp for this experience”</p>
+                                <div class="container d-flex justify-content-center">
+                                    <div class="swipe-image-1"></div>
+                                </div>
+                                <p class="text-uppercase name-2">Ashimi Ashley</p>
+                                <p class="name-1">Product Management Intern</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="container">
+                            <div class="square"></div>
+                            <div class="square-1 text-center">
+                                <p class="content-1">“I joined Kodecamp with little expectations, but looking back, I am
+                                    amazed with how far I have developed my skills.”</p>
+                                <div class="container d-flex justify-content-center">
+                                    <div class="swipe-image-2"></div>
+                                </div>
+                                <p class="text-uppercase name">Olatunbosun Kafisanwo</p>
+                                <p class="name-1">Frontend Development Intern</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="container">
+                            <div class="square"></div>
+                            <div class="square-1 text-center">
+                                <p class="content-1">It was really an exciting journey and Kodecamp
+                                    made the learning experience worthwhile.
+                                    Thanks to Kodecamp, now I look forward to
+                                    the future</p>
+                                <div class="container d-flex justify-content-center">
+                                    <div class="swipe-image-3"></div>
+                                </div>
+                                <p class="text-uppercase name">Akinroyebi Ayomide</p>
+                                <p class="name-1">Product Design Intern</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                </div>
+            </div>
+
+            <div class="swiper-button-prev swiper-navBtn"></div>
+            <div class="swiper-button-next swiper-navBtn"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+
+    <!-- how it works -->
+    <section id="how-it-works">
+        <div class="container first-step mt-5">
+            <h4 class="text-center fw-bolder heading-1">How it works</h4>
+            <div>
+                <div class="row mt-5">
+                    <div class="col-lg-5 col-md-12 col-sm-12 img-1">
+                        <img src="images/Rectangle 1553.png" class="lens" alt="">
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12 img-2 ps-5">
+                        <h2 class="fw-bolder heading-2">Step 1: Explore our list of courses</h2>
+                        <p class="fs-5 heading-3">Simply go to the explore section or use the search feature to check
+                            out course(s) that might interest you!</p>
+                    </div>
+
+                    <img src="images/finger.png" class="lens-1" alt="">
+
+                </div>
+                <!-- end of step one -->
+
+                <div class="row mt-5 mb-5">
+                    <div class="col-lg-6 col-md-12 col-sm-12 step-2">
+                        <h2 class="fw-bolder heading-2">Step 2: Choose your desired choice</h2>
+                        <p class="fs-5 heading-3">Check out the courses and make
+                            a choice on which best suits you!</p>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-sm-12 step-img">
+                        <img src="images/finger.png" class="lens" alt="">
+                    </div>
+                </div>
+                <!-- end of step two -->
+
+                <div class="row mt-5 mb-5">
+                    <div class="col-lg-5 col-md-12 col-sm-12 img-1">
+                        <img src="/images/queue workers.png" class="lens" alt="">
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12 img-2 ps-5">
+                        <h2 class="fw-bolder heading-2">Step 3: Apply!</h2>
+                        <p class="fs-5 heading-3">Apply and join the link to your track and be among fellow interns,
+                            learn and socialize together</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr class="text-dark mb-5">
+
+    <section>
+        <div class="container analytics-section ps-5 mt-5">
+            <div class="row text-center d-flex justify-content-center row-diagram">
+
+                <div class="col-lg-5 col-md-8 col-sm-12 p-5 shadow mx-3 analytics-diagram">
+                    <h3 class="version mb-4">KodeCamp 1.0</h3>
+                    <p class="version-body">Over the course of the Kodecamp 1.0 we have had over 65% of interns learn
+                        using our platform as seen on our analytics diagram.</p>
+                    <div class="radial-chart">
+                        <div class="outer">
+                            <div class="inner">
+                                <div id="number-chart">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px"
+                            class="circle-svg">
+                            <defs>
+                                <linearGradient id="GradientColor">
+                                    <stop offset="0%" stop-color="#669E00" />
+                                    <stop offset="100%" stop-color="#669E00" />
+                                </linearGradient>
+                            </defs>
+                            <circle class="circle1" cx="80" cy="80" r="70" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-5 col-md-8 col-sm-12 p-5 shadow mx-3 analytics-diagram">
+                    <h3 class="version mb-4">KodeCamp 2.0</h3>
+                    <p class="version-body">Over the course of the Kodecamp 1.0 we have had over 85% of interns learn
+                        using our platform as seen on our analytics diagram.</p>
+                    <div class="radial-chart">
+                        <div class="outer">
+                            <div class="inner">
+                                <div id="number-chart2">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px"
+                            class="circle-svg">
+                            <defs>
+                                <linearGradient id="GradientColor">
+                                    <stop offset="0%" stop-color="#669E00" />
+                                    <stop offset="100%" stop-color="#669E00" />
+                                </linearGradient>
+                            </defs>
+                            <circle class="circle2" cx="80" cy="80" r="70" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="p-5 container text-center">
+            <h3 class="version-3">KodeCamp 3.0</h3>
+            <p class="version-body">Want to have access to all the juicy contents and more? <a href="#">Join</a> the
+                waitlist to apply for the next bootcamp training, Hurry now!</p>
+        </div>
+
+        <div class="container">
+            <div class="d-flex justify-content-center align-item-center text-center">
+                <div class="counter1 mx-2">
+                    <span class="counter-num1">Days</span>
+                </div>
+                <div class="counter1 mx-2">
+                    <span class="counter-num1">Hours</span>
+                </div>
+                <div class="counter1 mx-2">
+                    <span class="counter-num1">Mins</span>
+                </div>
+                <div class="counter1 mx-2">
+                    <span class="counter-num1">Secs</span>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center align-item-center text-center">
+                <div class="counter mx-2">
+                    <span class="counter-num">24</span>
+                </div>
+                <div class="counter mx-2">
+                    <span class="counter-num">12</span>
+                </div>
+                <div class="counter mx-2">
+                    <span class="counter-num">12</span>
+                </div>
+                <div class="counter mx-2">
+                    <span class="counter-num">12</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container data-section text-center shadow mb-5">
+            <h2 class="data">Your data is safe with us</h2>
+            <p class="data-body">Whatever data given to us is treated with confidentiality and will not be disclosed to
+                any third party, neither will we spam your mails or send any unrelated data. We are keen to ensure there
+                is no breach of information on our part and you can be rest assured that we will protect any information
+                gotten.</p>
+            <button class="data-btn mt-5">Sign up now</button>
+        </div>
+    </section>
+
+        <!-- text-section -->
+        <section class="text-section mt-5" id="contact">
+            <div class="container text-center fs-2 fw-semibold my-5">
+                <p class="contact-words">Our team are available to respond to any enquires or question you might have. We'll
+                    love to hear from
+                    you,<br>
+                    Get in touch today! </p>
+            </div>
+        </section>
+        <!-- end of text-section -->
+    
+        <!-- contact -->
+        <section class="container contact-section">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <form action="">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Full name</label>
+                            <input type="text" class="form-control py-3" id="name" placeholder="Jane Cooper">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email address</label>
+                            <input type="email" class="form-control py-3" id="email" aria-describedby="emailHelp"
+                                placeholder="1901 Thornridge Cir, Shiloh, Hawali 81063">
+                        </div>
+                        <div class="mb-3">
+                            <label for="number" class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control py-3" id="number" placeholder="+2348125550126">
+                        </div>
+                        <div class="mb-3">
+                            <label for="textarea" class="form-label">Message</label>
+                            <textarea name="textarea" class="form-control py-3 outline-none" id="textarea" cols="" rows="5"
+                                placeholder="Can I take free courses together"></textarea>
+                        </div>
+                        <div class="mb-3 d-flex justify-content-center">
+                            <button class="login-3 btn px-5 py-2">Send a message</button>
+                        </div>
+                    </form>
+                </div>
+    
+                <div class="col-lg-6 col-md-12 col-sm-12 photo-sect my-5">
+                    <img src="images/Photo-grid.png" alt="Chain-in-tech" class="img-fluid">
+                </div>
+            </div>
+            </div>
+    
+        </section>
+        <!-- end of contact -->
+
+
+    <!-- footer -->
+    <footer class="py-4 pt-5 footer">
+        <div class="text-left container-xl px-lg-0 footer-container position-relative container">
+            <div class="align-items-start justify-content-around px-xl-0 mb-3 row">
+                <div class="col-7 col-md-3 col-lg-2 mb-lg-0 footer-logo col">
+                    <img src="images/kodecamp logo white.png" class="img-fluid footer-img" alt>
+                </div>
+                <div class="col-11 col-md-6 col-lg-2 mb-0 mb-lg-0 footer-col coll">
+                    <p class="footer-subtitle">Quick Links</p>
+                    <ul class="list-unstyled">
+                        <li class="footer-list">
+                            <a href="#home" class="footer-list">Home</a>
+                        </li>
+                        <li class="footer-list">
+                            <a href="#contact" class="footer-list link-2">Contact Us</a>
+                        </li>
+                        <!-- <li class="footer-list">
+                            <a href="#" class="footer-list">Explore</a>
+                        </li> -->
+                        <li class="footer-list">
+                            <a href="#how-it-works" class="footer-list">How it works</a>
+                        </li>
+                        <li class="footer-list">
+                            <a href="#sponsor" class="footer-list">Sponsors</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-11 col-md-6 col-lg-2 mb-lg-0 footer-col coll connect-links">
+                    <p class="footer-subtitle">Connects</p>
+                    <ul class="list-unstyled">
+                        <li class="footer-list">
+                            <a href="#" class="footer-list">Linkedin</a>
+                        </li>
+                        <li class="footer-list">
+                            <a href="#" class="footer-list">Facebook</a>
+                        </li>
+                        <li class="footer-list">
+                            <a href="#" class="footer-list">Twitter</a>
+                        </li>
+                        <li class="footer-list">
+                            <a href="#" class="footer-list">Instagram</a>
+                        </li>
+                        <li class="footer-list">
+                            <a href="#" class="footer-list">Youtube</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-11 col-md-6 col-lg-2 mb-0 mb-lg-0 footer-col coll">
+                    <p class="footer-subtitle">Terms</p>
+                    <ul class="list-unstyled">
+                        <li class="footer-list">
+                            <a href="#" class="footer-list">Privacy Policy</a>
+                        </li>
+                        <li class="footer-list">
+                            <a href="#" class="footer-list">Terms of Service</a>
+                        </li>
+                        <li class="footer-list">
+                            <a href="#" class="footer-list">Copyright Policy</a>
+                        </li>
+                        <li class="footer-list">
+                            <a href="#" class="footer-list">FAQs</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-11 col-md-6 col-lg-2 mb-lg-0 mb-5 footer-col coll connect-links-2">
+                    <p class="footer-subtitle">Connect With Us</p>
+                    <ul class="list-unstyled">
+                        <li class="footer-list">
+                            <a href="#" class="footer-list"><img src="images/linkedin.png" alt="" class="link-icon-1">
+                                Linkedin</a>
+                        </li>
+                        <li class="footer-list">
+                            <a href="#" class="footer-list"><img src="images/facebook.png" alt="" class="link-iconn">
+                                Facebook</a>
+                        </li>
+                        <li class="footer-list">
+                            <a href="#" class="footer-list"><img src="images/twitter.png" alt="" class="link-icon">
+                                Twitter</a>
+                        </li>
+                        <li class="footer-list">
+                            <a href="#" class="footer-list"><img src="images/instagram.png" alt="" class="link-icon">
+                                Instagram</a>
+                        </li>
+                        <li class="footer-list">
+                            <a href="#" class="footer-list"><img src="images/youtube.png" alt="" class="link-icon">
+                                Youtube</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-11 col-md-6 col-lg-3 mb-2 footer-col col input-box">
+                    <p class="footer-subtitle footer-subscribe-1">We know you'll <br> love to find out more!</p>
+                    <p class="footer-list footer-subscribe-2">Subscribe to our newsletter to receive the latest updates
+                        and information about Kodecamp. </p>
+                    <p class="footer-subtitle footer-subscribe-3">Stay in touch</p>
+                    <p class="footer-list footer-subscribe-4">Subscribe to our newsletter</p>
+                    <form>
+                        <div class="mb-2 mt-4 bg-none input-group">
+                            <input type="email" placeholder="Email address" aria-label="Recipient's username"
+                                aria-describedby="basic-addon2"
+                                class="bg-transparent py-3 fw-light text-light ps-3 footer-form">
+                            <button type="submit" id="button-addon2"
+                                class="border-0 bg-primary px-4 white-100 bg-blue-100 btn btn-outline-secondary ">
+                                <img src="images/arrow.png" alt="" class="footer-btn">
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr class="footer-line text-light mt-5 mb-0">
+            <p class="text-center text-light mt-0 pt-3 white-100" style="font-weight: 500;">&copy; 2022 kodeCamp</p>
+        </div>
+    </footer>
+
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/landingpage.js"></script>
+    <script src="js/howitworks.js"></script>
+    <script src="https://kit.fontawesome.com/03d1257cc1.js" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
