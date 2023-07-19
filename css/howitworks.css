@@ -427,7 +427,7 @@
 /* footer styles */
 .footer{
     background-color: #19364D;
-    background-image: url(/images/Vector\ mobile.png);
+    background-image: url(../images/Vector\ mobile.png);
     background-position-x: -110px;
     background-position-y: center;
     background-repeat: no-repeat;
@@ -456,7 +456,7 @@
 
 @media screen and (max-width: 991px){
     .footer{
-        background-image: url(/images/Vector\ 120.png);
+        background-image: url(../images/Vector\ 120.png);
         background-position-x: 0px;
         background-position-y: 0;
         background-size: 100% !important;
